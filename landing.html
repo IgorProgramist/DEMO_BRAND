@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kelp &amp; Co | Coffee roasted at the tide line</title>
+<style>
+:root{--sea:#0F4C5C;--sand:#F3E9D2;--orange:#E36414;--ink:#1B1B1B;--foam:#FFFFFF}
+*{box-sizing:border-box}
+body{margin:0;background:var(--sand);color:var(--ink);font:18px/1.55 "Segoe UI",system-ui,sans-serif}
+header{display:flex;align-items:center;justify-content:space-between;padding:18px 6vw;background:var(--sea);color:var(--foam)}
+.brand{display:flex;align-items:center;gap:12px;font:700 22px Georgia,serif;letter-spacing:.01em}
+.brand img{width:44px;height:44px;border-radius:22px;background:var(--foam);padding:5px}
+nav a{color:var(--foam);text-decoration:none;margin-left:24px;font-size:16px}
+nav a:hover,nav a:focus-visible{text-decoration:underline}
+.hero{position:relative;min-height:70vh;display:grid;align-items:end;color:var(--foam);background:var(--sea) url("art/hero.png") center/cover no-repeat}
+.hero::before{content:"";position:absolute;inset:0;background:var(--sea);opacity:.55}
+.hero .in{position:relative;padding:12vh 6vw 9vh;max-width:900px}
+h1{font:700 clamp(40px,7vw,84px)/1.02 Georgia,serif;margin:0 0 20px;letter-spacing:-.01em}
+.btn{display:inline-block;background:var(--orange);color:var(--foam);padding:14px 28px;border-radius:6px;text-decoration:none;font-weight:600}
+.btn:focus-visible{outline:3px solid var(--foam);outline-offset:3px}
+.tide{display:block;width:100%;height:56px;background:var(--sand)}
+section{padding:64px 6vw;max-width:1100px;margin:auto}
+h2{font:700 36px/1.1 Georgia,serif;color:var(--sea);margin:0 0 14px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:28px}
+@media (max-width:760px){.grid{grid-template-columns:1fr}nav{display:none}}
+.card{background:var(--foam);border-top:6px solid var(--sea);padding:20px 22px}
+.card h3{font:700 22px Georgia,serif;margin:0 0 6px;color:var(--sea)}
+.band{background:var(--sea);color:var(--foam);background-image:url("art/pattern.png");background-size:260px}
+.band .box{background:var(--sea);padding:36px;max-width:640px;margin:auto}
+footer{padding:28px 6vw;background:var(--ink);color:var(--sand);font-size:15px}
+</style></head><body>
+<header>
+  <div class="brand"><img src="art/logo.png" alt="">Kelp &amp; Co</div>
+  <nav><a href="#coffees">Coffees</a><a href="#roast">The roast</a><a href="#visit">Visit</a></nav>
+</header>
+<div class="hero"><div class="in">
+  <h1>Coffee roasted where the kelp starts.</h1>
+  <a class="btn" href="#coffees">See this week's coffees</a>
+</div></div>
+<svg class="tide" viewBox="0 0 1200 56" preserveAspectRatio="none" aria-hidden="true">
+  <path d="M0 0 H1200 V30 C1100 56 1000 4 900 30 C800 56 700 4 600 30 C500 56 400 4 300 30 C200 56 100 4 0 30 Z" fill="#0F4C5C"/>
+</svg>
+<section id="coffees">
+  <h2>Three coffees this week</h2>
+  <p>Small batches, roasted on Saturday, shipped on Monday.</p>
+  <div class="grid">
+    <div class="card"><h3>Low Tide</h3><p>Washed Ethiopian. Tea-like, citrus, light roast.</p></div>
+    <div class="card"><h3>High Tide</h3><p>Colombian blend. Chocolate and orange peel, medium roast.</p></div>
+    <div class="card"><h3>Driftwood</h3><p>Sumatra. Heavy body, cedar and dark cocoa, dark roast.</p></div>
+  </div>
+</section>
+<div class="band" id="roast"><section><div class="box">
+  <h2 style="color:#F3E9D2">One roaster, 12 kilos a batch</h2>
+  <p>We roast on the harbour front and print the roast date on every bag.</p>
+</div></section></div>
+<section id="visit">
+  <h2>Visit the roastery</h2>
+  <p>Open Saturday and Sunday, 8:00 to 14:00. Bring a mug and we take 50 cents off.</p>
+  <a class="btn" href="#">Plan your visit</a>
+</section>
+<footer>Kelp &amp; Co is a fictional brand used for a portfolio demo.</footer>
+</body></html>
